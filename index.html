@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Persegi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <h2>Kalkulator Persegi</h2>
+    <label for="sideLength">Panjang Sisi:</label>
+    <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+
+    <button onclick="calculateArea()">Hitung Luas</button>
+    <button onclick="calculatePerimeter()">Hitung Keliling</button>
+
+    <div id="resultArea" class="result">Luas: </div>
+    <div id="resultPerimeter" class="result">Keliling: </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
