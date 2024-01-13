@@ -9,16 +9,22 @@
 </head>
 
 <body>
-  <div class="calculator">
-    <h2>Kalkulator Persegi</h2>
-    <label for="sideLength">Panjang Sisi:</label>
-    <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+  <div class="container">
+    <div class="calculator">
+      <h2>Kalkulator Persegi</h2>
+      <p>Menghitung luas dan keliling persegi berdasarkan panjang sisi yang dimasukkan.</p>
 
-    <button onclick="calculateArea()">Hitung Luas</button>
-    <button onclick="calculatePerimeter()">Hitung Keliling</button>
+      <label for="sideLength">Panjang Sisi:</label>
+      <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
 
-    <div id="resultArea" class="result">Luas: </div>
-    <div id="resultPerimeter" class="result">Keliling: </div>
+      <button onclick="calculateArea()">Hitung Luas</button>
+      <button onclick="calculatePerimeter()">Hitung Keliling</button>
+    </div>
+    <div class="visual">
+      <div id="resultArea" class="result">Luas: </div>
+      <div id="resultPerimeter" class="result">Keliling: </div>
+      <div id="visualSquare" class="visual-square"></div>
+    </div>
   </div>
 
   <script src="js/script.js"></script>

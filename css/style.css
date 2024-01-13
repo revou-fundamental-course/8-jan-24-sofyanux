@@ -8,6 +8,13 @@ body {
   margin: 0;
 }
 
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .calculator {
   background-color: #fff;
   text-align: center;
@@ -15,7 +22,24 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px;
+  display: inline-block;
+}
+
+.visual {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: inline-block;
+  min-width: 300px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 input {
@@ -40,6 +64,26 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.visual-square {
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  padding-bottom: 0;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.side-length-label {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  transform-origin: center;
 }
 
 .result {
