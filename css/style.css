@@ -102,3 +102,21 @@ button:hover {
   background-color: #eee;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .button {
+    flex-direction: column;
+  }
+  .calculator {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .visual {
+    box-sizing: border-box;
+  }
+}
